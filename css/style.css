@@ -73,6 +73,28 @@ header .container {
   padding-bottom: 25px;
 }
 
+.tel {
+  margin-left: 10px;
+}
+
+.mail {
+  margin-left: 10px;
+}
+
+.logo-envelope {
+  width: 16px;
+  height: 12px;
+  color: var(--title-text-color);
+  margin-left: auto;
+}
+
+.logo-smartphone {
+  width: 10px;
+  height: 16px;
+  color: var(--title-text-color);
+  margin-left: 30px;
+}
+
 h1 {
   font-weight: 900;
   font-size: 44px;
@@ -234,10 +256,6 @@ h2 {
   margin-left: auto;
 }
 
-.tel {
-  margin-left: 50px;
-}
-
 .button-link {
   font-family: Roboto;
   color: var(--primery-text-color);
@@ -330,10 +348,6 @@ h2 {
   line-height: 1.7;
   color: var(--address-link-color);
   text-decoration: none;
-}
-
-.mail {
-  margin-left: auto;
 }
 
 .address-link:hover,
