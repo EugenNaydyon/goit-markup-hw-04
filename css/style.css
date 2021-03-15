@@ -183,6 +183,8 @@ h2 {
   letter-spacing: 0.03em;
 }
 
+/*=======OUR TEAM=======*/
+
 .our-team {
   background-color: var(--button-background-color);
   padding-bottom: 94px;
@@ -362,6 +364,7 @@ h2 {
   font-size: 14px;
   line-height: 1.2;
   color: var(--accent-text-color);
+  fill: var(--accent-text-color);
 }
 
 .address-footer {
@@ -432,4 +435,29 @@ footer .container {
 
 .examples li {
   border: 1px solid #eeeeee;
+}
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+fill: var(--accent-text-color);
 }
