@@ -158,7 +158,7 @@ h1 {
 }
 
 .features .container {
-  padding-top: 94px;
+  margin-top: 94px;
   box-sizing: border-box;
 }
 
@@ -554,3 +554,62 @@ fill: var(--accent-text-color);
 /*.bottom-part {
   display: flex;
 }*/
+/*=========CLIENTS========*/
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-list-box {
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 170px;
+  height: 90px;
+}
+
+.clients-list-logo1 {
+  width: 45px;
+  height: 50px;
+}
+
+.clients-list-logo2 {
+  width: 40px;
+  height: 52px;
+}
+
+.clients-list-logo3 {
+  width: 41px;
+  height: 43px;
+}
+
+.clients-list-logo4 {
+  width: 80px;
+  height: 42px;
+}
+
+.clients-list-logo5 {
+  width: 59px;
+  height: 47px;
+}
+
+.clients-list-logo6 {
+  width: 88px;
+  height: 45px;
+}
+
+.clients-list-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients .container {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
+.clients-title {
+  margin-bottom: 50px;
+}
