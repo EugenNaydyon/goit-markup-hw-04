@@ -192,7 +192,7 @@ h2 {
   letter-spacing: 0.03em;
 }
 
-/*=======OUR TEAM=======*/
+/*=======НАША КОМАНДА=======*/
 
 .our-team {
   background-color: var(--button-background-color);
@@ -216,6 +216,12 @@ h2 {
 
 .team li {
   background: #ffffff;
+  /*box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;*/
+}
+
+.team-person-box {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -233,7 +239,7 @@ h2 {
 
 .team .team-person p {
   text-align: center;
-  padding-bottom: 30px;
+  /*padding-bottom: 30px;*/
 }
 
 .social-list-box {
@@ -241,6 +247,38 @@ h2 {
   margin: 0 auto;
   margin-top: 16px;
   margin-bottom: 30px;
+}
+
+/*===НАША КОМАНДА иконки====*/
+
+.team-person-social-links {
+  /*background-color: brown;*/
+  margin-bottom: 30px;
+  margin-top: 16px;
+}
+
+.team-person-iconlist {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-person-iconlist:first-child {
+  padding-left: 32px;
+}
+
+.team-person-iconlist:last-child {
+  padding-right: 32px;
+}
+
+.team-person-svg {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: aqua;
 }
 
 .site-nav .link:hover,
@@ -492,28 +530,6 @@ footer .container {
 
 /*========ICONS=======*/
 
-.social-list-icon {
-  width: 20px;
-  height: 20px;
-}
-
-.social-list {
-  display: flex;
-  /*align-items: center;*/
-}
-
-.social-list-link {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: tomato;
-}
-
-/*.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
-fill: var(--accent-text-color);
-}*/
-
 .features-icons {
   width: 270px;
   height: 120px;
@@ -658,15 +674,3 @@ fill: var(--accent-text-color);
   display: flex;
   align-items: flex-end;
 }*/
-
-.kolya-link {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: tomato;
-}
-
-.kolya-icon {
-  width: 20px;
-  height: 20px;
-}
