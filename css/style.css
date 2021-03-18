@@ -291,6 +291,7 @@ h2 {
 
 .team-person-svg:hover {
   background-color: var(--accent-text-color);
+  fill: var(--main-background-color);
 }
 
 .site-nav .link:hover,
@@ -588,7 +589,7 @@ footer .container {
 
 .join {
   /*display: flex;*/
-  width: 206;
+  width: 206px;
 }
 
 .join-list {
