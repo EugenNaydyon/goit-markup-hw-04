@@ -546,6 +546,18 @@ fill: var(--accent-text-color);
   fill: #2f303a;
 }
 
+/*=======FOOTER========*/
+
+/*.bottom-part {
+  display: flex;
+}*/
+
+.full-logo-footer,
+/*.address-link,*/
+.footer-social-link {
+  display: block;
+}
+
 .join {
   /*display: flex;*/
   width: 206;
@@ -556,7 +568,7 @@ fill: var(--accent-text-color);
   width: 206px;
 }
 
-.footer-social-list {
+/*.footer-social-list {
   display: flex;
   justify-content: space-between;
   background-color: var(--section-background-color);
@@ -567,7 +579,7 @@ fill: var(--accent-text-color);
   height: 44px;
   border-radius: 50%;
   background-color: tomato;
-}
+}*/
 
 /*=========CLIENTS========*/
 
@@ -640,4 +652,21 @@ fill: var(--accent-text-color);
 
 .clients-title {
   margin-bottom: 50px;
+}
+
+/*.bottom-part-logo {
+  display: flex;
+  align-items: flex-end;
+}*/
+
+.kolya-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: tomato;
+}
+
+.kolya-icon {
+  width: 20px;
+  height: 20px;
 }
