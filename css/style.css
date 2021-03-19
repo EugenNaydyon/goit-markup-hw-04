@@ -66,6 +66,21 @@ nav,
   align-items: center;
 }
 
+.full-logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--primery-text-color);
+  text-decoration: none;
+  margin-right: 93px;
+}
+
+.web-logo {
+  color: var(--accent-text-color);
+}
+
 .section-button {
   border-top: 1px solid #ececec;
   margin: 0 auto;
@@ -279,29 +294,24 @@ h2 {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  /*background-color: aqua;*/
-}
-
-.team-icons {
-  fill: var(--icon-pasive-color);
-}
-
-.team-icons:hover {
-  fill: var(--main-background-color);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-person-svg:hover {
   background-color: var(--accent-text-color);
-  /*fill: var(--main-background-color);*/
 }
 
-.site-nav .link:hover,
-.link:focus {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  color: var(--accent-text-color);
-  text-decoration: none;
+.team-icons {
+  fill: var(--icon-pasive-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-icons:hover {
+  fill: var(--main-background-color);
 }
 
 .site-nav .link {
@@ -310,6 +320,18 @@ h2 {
   line-height: 1.14;
   text-decoration: none;
   color: var(--primery-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--accent-text-color);
+  text-decoration: none;
 }
 
 .site-nav .link.current {
@@ -340,6 +362,11 @@ h2 {
   cursor: pointer;
   border-radius: 4px;
   padding: 6px 22px;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms, 250ms, 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1),
+    cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-link:focus,
@@ -352,21 +379,9 @@ h2 {
   background-color: var(--accent-text-color);
   cursor: pointer;
   border-radius: 4px;
-}
-
-.full-logo {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.2;
-  color: var(--primery-text-color);
-  text-decoration: none;
-  margin-right: 93px;
-}
-
-.web-logo {
-  color: var(--accent-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
 }
 
 /*=====PROGECTS=====*/
@@ -405,6 +420,19 @@ h2 {
   color: var(--title-text-color);
 }
 
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.examples li {
+  border: 1px solid #eeeeee;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .examples li:hover,
 .examples li:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -412,18 +440,8 @@ h2 {
   cursor: pointer;
 }
 
-.examples {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
 .examples li:nth-child(-n + 6) {
   margin-bottom: 30px;
-}
-
-.examples li {
-  border: 1px solid #eeeeee;
 }
 
 .projects-examples-overlay {
@@ -510,6 +528,10 @@ h2 {
   line-height: 1.7;
   color: var(--address-link-color);
   text-decoration: none;
+
+  transition-property: color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:hover,
@@ -573,13 +595,6 @@ footer .container {
   margin-right: 8px;
 }
 
-.button li:hover,
-.button li:focus {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  cursor: pointer;
-}
-
 .join-title {
   font-family: Roboto;
   font-style: normal;
@@ -627,10 +642,6 @@ footer .container {
 
 /*=======FOOTER========*/
 
-/*.bottom-part {
-  display: flex;
-}*/
-
 .full-logo-footer,
 /*.address-link,*/
 .footer-social-link {
@@ -663,6 +674,10 @@ footer .container {
   border-radius: 4px;
   width: 170px;
   height: 90px;
+
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list-box:hover {
@@ -673,36 +688,60 @@ footer .container {
   width: 45px;
   height: 50px;
   fill: var(--icon-pasive-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list-logo2 {
   width: 40px;
   height: 52px;
   fill: var(--icon-pasive-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list-logo3 {
   width: 41px;
   height: 43px;
   fill: var(--icon-pasive-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list-logo4 {
   width: 80px;
   height: 42px;
   fill: var(--icon-pasive-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list-logo5 {
   width: 59px;
   height: 47px;
   fill: var(--icon-pasive-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list-logo6 {
   width: 88px;
   height: 45px;
   fill: var(--icon-pasive-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list-logo1:hover,
@@ -723,11 +762,6 @@ footer .container {
 .clients-title {
   margin-bottom: 50px;
 }
-
-/*.bottom-part-logo {
-  display: flex;
-  align-items: flex-end;
-}*/
 
 footer .container {
   display: flex;
@@ -767,16 +801,23 @@ footer .container {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-}
 
-.footer-icons {
-  fill: var(--main-background-color);
-}
-
-.footer-icons:hover {
-  fill: var(--main-background-color);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-svg:hover {
   background-color: var(--accent-text-color);
+}
+
+.footer-icons {
+  fill: var(--main-background-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-icons:hover {
+  fill: var(--main-background-color);
 }
