@@ -178,6 +178,8 @@ h1 {
   box-sizing: border-box;
 }
 
+/*====ЧЕМ МЫ ЗАНИМАЕМСЯ====*/
+
 .activities .container {
   padding-bottom: 94px;
   padding-top: 94px;
@@ -194,7 +196,9 @@ h1 {
 
 .whats-doing-item {
   display: block;
+  background-image: url("../images/Doing/label.jpg");
 }
+
 .whats-doing-img {
   display: flex;
   justify-content: space-between;
@@ -820,4 +824,42 @@ footer .container {
 
 .footer-icons:hover {
   fill: var(--main-background-color);
+}
+
+/*=====BACKDROP======*/
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 580px;
+  background-color: #ffffff;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.backdrop-modal-btn-close {
+  width: 30px;
+  height: 30px;
 }
