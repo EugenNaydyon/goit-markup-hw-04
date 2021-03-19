@@ -378,12 +378,26 @@ h2 {
 }
 
 .examples h3 {
+  font-family: Roboto;
+  font-style: normal;
   font-weight: bold;
+  letter-spacing: 0.06em;
   font-size: 18px;
   line-height: 2;
+  margin-bottom: 4px;
+  color: var(--primery-text-color);
 }
 
-.examples p,
+.projects-examples-data p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
 .team p {
   font-weight: normal;
   font-size: 16px;
@@ -410,6 +424,30 @@ h2 {
 
 .examples li {
   border: 1px solid #eeeeee;
+}
+
+.projects-examples-overlay {
+  position: relative;
+}
+
+.overlay {
+  width: 370px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(33, 150, 243, 0.9);
+  color: #ffffff;
+  padding: 63px 24px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.5;
+  height: 100%;
+}
+
+.projects-examples-data {
+  padding: 20px 24px;
 }
 
 .details {
