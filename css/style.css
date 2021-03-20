@@ -853,15 +853,17 @@ footer .container {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.06);
+
+  transition: all 250ms linear;
 }
 
 .modal {
   position: absolute;
-  top: 221px;
-  left: 536px;
-  /*transform: translate(-50%, -50%);*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 528px;
   height: 580px;
   border-radius: 4px;
@@ -886,4 +888,10 @@ footer .container {
 .backdrop-modal-btn-close {
   width: 18px;
   height: 18px;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
