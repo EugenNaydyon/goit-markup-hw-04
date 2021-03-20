@@ -329,6 +329,26 @@ h2 {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.link.current::after {
+  display: block;
+  content: "";
+  width: 48px;
+  height: 4px;
+  /*margin-top: 28px;*/
+  border-radius: 2px;
+  background-color: var(--accent-text-color);
+}
+
+.site-item.portfolio .link.current::after {
+  display: block;
+  content: "";
+  width: 78px;
+  height: 4px;
+  /*margin-top: 28px;*/
+  border-radius: 2px;
+  background-color: var(--accent-text-color);
+}
+
 .site-nav .link:hover,
 .site-nav .link:focus {
   font-weight: 500;
@@ -839,11 +859,12 @@ footer .container {
 
 .modal {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 221px;
+  left: 536px;
+  /*transform: translate(-50%, -50%);*/
   width: 528px;
   height: 580px;
+  border-radius: 4px;
   background-color: #ffffff;
 }
 
